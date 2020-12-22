@@ -63,7 +63,6 @@ function App() {
         </Row>
         <Row>
           <Col size="xs-12">
-            <h1>Render Recipes Here</h1>
             {recipes.map((recipe) => (
               <RecipeList key={recipe._id}>
                 <RecipeListItem
