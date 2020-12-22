@@ -21,7 +21,7 @@ export function RecipeListItem(props) {
           <Col size="xs-8 sm-9">
             <h3>{props.title}</h3>
             <p>
-              {props.ingredients}
+              {props.ingredients.join(" ")}
             </p>
             <a
               rel="noreferrer noopener"
