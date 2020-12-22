@@ -63,16 +63,17 @@ function App() {
         </Row>
         <Row>
           <Col size="xs-12">
-            {recipes.map((recipe) => (
-              <RecipeList key={recipe._id}>
+            <RecipeList>
+              {recipes.map((recipe) => (
                 <RecipeListItem
+                  key={recipe._id}
                   title={recipe.title}
                   ingredients={recipe.ingredients}
                   href={recipe.href}
                   thumbnail={recipe.thumbnail}
                 />
-              </RecipeList>
-            ))}
+              ))}
+            </RecipeList>
           </Col>
         </Row>
       </Container>
